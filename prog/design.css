@@ -7,3 +7,9 @@
 	font-size: 20px;
 	color: blue;
 }
+.date{
+	align:right;
+	font-family: 'digital-clock-font';
+	font-size: 15px;
+	color: #00134d;
+}

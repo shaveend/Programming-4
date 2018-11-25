@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from ekan-admin-templates.multipurposethemes.com/main/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Nov 2018 01:08:32 GMT -->
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,28 +27,24 @@
 	<!-- theme style -->
 	<link rel="stylesheet" href="css/master_style.css">
 
-	<!-- Ekan Admin skins -->
+
 	<link rel="stylesheet" href="css/skins/_all-skins.css">
 	<link rel="stylesheet" type="text/css" href="design.css">
+  <script type="text/javascript" src="js/script.js"></script>
 
 
-	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
+
 
 
   </head>
 
-<body class="hold-transition skin-info dark-sidebar light sidebar-mini">
+<body onload="renderTime();" class="hold-transition skin-info dark-sidebar light sidebar-mini">
 <div class="wrapper">
 
   <header class="main-header">
     <!-- Logo -->
     <a href="index-2.html" class="logo">
-      <!-- mini logo -->
+
 
       <!-- logo-->
       <div class="logo-lg">
@@ -128,15 +124,9 @@
 			<div class="d-flex align-items-center">
 				<div class="mr-auto">
 					<h3 class="page-title">Dashboard</h3>
-					<div class="d-inline-block align-items-center">
-						<nav>
-							<ol class="breadcrumb">
-								<li class="breadcrumb-item"><a href="#"><i class="mdi mdi-home-outline"></i></a></li>
-								<li class="breadcrumb-item active" aria-current="page">Control</li>
-							</ol>
-						</nav>
-					</div>
 				</div>
+        <div id="clock" class="date">  </div>
+
 
 <!-- ./wrapper -->
 
