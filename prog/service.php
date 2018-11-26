@@ -29,7 +29,7 @@
 
 
 	<link rel="stylesheet" href="css/skins/_all-skins.css">
-	<link rel="stylesheet" type="text/css" href="design.css">
+	<link rel="stylesheet" type="text/css" href="design.css" media="screen">
   <script type="text/javascript" src="js/script.js"></script>
 
 
@@ -93,7 +93,7 @@
         	<li class="header nav-small-cap">AJITH MOTORS</li>
 		</div>
 		<li class="treeview active">
-        
+
          </li>
           </ul>
         </li>
@@ -111,7 +111,30 @@
 		</div>
     </section>
   </aside>
+<style media="screen">
+#tbl {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
 
+#tbl td, #tbl th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#tbl tr:nth-child(even){background-color: #f2f2f2;}
+
+#tbl tr:hover {background-color: #ddd;}
+
+#tbl th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+</style>
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
 	  <div class="container-full">
@@ -122,6 +145,26 @@
 					<h3 class="page-title">Dashboard</h3>
 				</div>
         <div id="clock" class="date">  </div>
+      </div>
+      </div>
+      </div>
+      <div class="table-responsive">
+
+
+        <table id="tbl">
+          <thead>
+            <th>Time</th>
+            <th >First Name</th>
+            <th>Last Name</th>
+            <th>Phone Number</th>
+            <th>Bike Type</th>
+            <th>Sercive Type</th>
+          </thead>
+        </table>
+      </div>
+
+        </div>
+
 
 
 <!-- ./wrapper -->
