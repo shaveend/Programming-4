@@ -94,24 +94,21 @@
         	<li class="header nav-small-cap">AJITH MOTORS</li>
 		</div>
 		<li class="treeview active">
-          <a href="#">
-            <i class="ti-dashboard"></i>
-            <span>Dashboard</span>
-          </a>
+          
          </li>
           </ul>
         </li>
         <div class="side">
 		  <br>
-			<li class="header nav-small-cap">MAIN(WEB)</li> <br>
+      <li ><a href="main.php"><i class="header nav-small-cap"></i>MAIN(WEB)</a></li> <br>
 
-	        <li class="header nav-small-cap">SERVICE CENTER</li><br>
+	    <li><a href="service.php"><i class="header nav-small-cap"></i>SERVICE CENTER</a></li> <br>
 
-	        <li class="header nav-small-cap">SHOWROOM</li><br>
+	    <li class="active"><a href="showroom.php"><i class="header nav-small-cap"></i>SHOWROOM</a></li> <br>
 
-	        <li class="header nav-small-cap">CONTACT</li><br>
+	     <li><a href="contact.php"><i class="header nav-small-cap"></i>CONTACT</a></li> <br>
 
-			<li class="header nav-small-cap">MAKE AN ADMIN</li><br>
+			<li><a href="makeadmin.php"><i class="header nav-small-cap"></i>MAKE AN ADMIN</a></li> <br>
 		</div>
     </section>
   </aside>
