@@ -106,7 +106,7 @@
 
 	    <li><a href="<?php echo base_url('index.php/home/show');?>"><i class="header nav-small-cap"></i>SHOWROOM</a></li> <br>
 
-	     <li class="active"><a href="<?php echo base_url('index.php/home/con');?>"><i class="header nav-small-cap"></i>CONTACT</a></li> <br>
+	    <li class="active"><a href="<?php echo base_url('index.php/home/con');?>"><i class="header nav-small-cap"></i>CONTACT</a></li> <br>
 
 			<li><a href="<?php echo base_url('index.php/home/admin');?>"><i class="header nav-small-cap"></i>MAKE AN ADMIN</a></li> <br>
 		</div>
