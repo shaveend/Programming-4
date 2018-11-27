@@ -13,24 +13,24 @@
     <title>AJITH MOTORS</title>
 
 	<!-- Bootstrap 4.0-->
-	<link rel="stylesheet" href="assets/vendor_components/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="<?php echo base_url();?>assets/vendor_components/bootstrap/dist/css/bootstrap.css">
 
 	<!-- daterange picker -->
-	<link rel="stylesheet" href="assets/vendor_components/bootstrap-daterangepicker/daterangepicker.css">
+	<link rel="stylesheet" href="<?php echo base_url();?>assets/vendor_components/bootstrap-daterangepicker/daterangepicker.css">
 
     <!-- c3 CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/vendor_components/c3/c3.min.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/vendor_components/c3/c3.min.css">
 
 	<!-- Bootstrap extend-->
-	<link rel="stylesheet" href="css/bootstrap-extend.css">
+	<link rel="stylesheet" href="<?php echo base_url();?>assets/css/bootstrap-extend.css">
 
 	<!-- theme style -->
-	<link rel="stylesheet" href="css/master_style.css">
+	<link rel="stylesheet" href="<?php echo base_url();?>assets/css/master_style.css">
 
 
-	<link rel="stylesheet" href="css/skins/_all-skins.css">
-	<link rel="stylesheet" type="text/css" href="design.css">
-  <script type="text/javascript" src="js/script.js"></script>
+	<link rel="stylesheet" href="<?php echo base_url();?>assets/css/skins/_all-skins.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/design.css">
+  <script type="text/javascript" src="<?php echo base_url();?>assets/js/script.js"></script>
 
 
 
@@ -48,7 +48,7 @@
 
       <!-- logo-->
       <div class="logo-lg">
-		  <span class="light-logo"><img src="yamaha.jpg" alt="logo" style="width:75px ;height:75px"></span>
+		  <span class="light-logo"><img src="<?php echo base_url();?>assets/images/yamaha.jpg" alt="logo" style="width:75px ;height:75px"></span>
 
 	  </div>
     </a>
@@ -80,7 +80,7 @@
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="image">
-          <img src="yamaha2.jpg"  alt="User Image" style="width:250px; height:100px">
+          <img src="<?php echo base_url();?>assets/images/yamaha2.jpg"  alt="User Image" style="width:250px; height:100px">
         </div>
         <div class="info">
 
@@ -99,15 +99,15 @@
         </li>
         <div class="side">
 		  <br>
-			<li class="active"><a href="main.php"><i class="header nav-small-cap"></i>MAIN(WEB)</a></li> <br>
+			<li class="active"><a href="<?php echo base_url('index.php/home/index');?>"><i class="header nav-small-cap"></i>MAIN(WEB)</a></li> <br>
 
-	    <li><a href="service.php"><i class="header nav-small-cap"></i>SERVICE CENTER</a></li> <br>
+	    <li><a href="<?php echo base_url('index.php/home/serv');?>"><i class="header nav-small-cap"></i>SERVICE CENTER</a></li> <br>
 
-	    <li><a href="showroom.php"><i class="header nav-small-cap"></i>SHOWROOM</a></li> <br>
+	    <li><a href="<?php echo base_url('index.php/home/show');?>"><i class="header nav-small-cap"></i>SHOWROOM</a></li> <br>
 
-	     <li><a href="contact.php"><i class="header nav-small-cap"></i>CONTACT</a></li> <br>
+	     <li><a href="<?php echo base_url('index.php/home/con');?>"><i class="header nav-small-cap"></i>CONTACT</a></li> <br>
 
-			<li><a href="makeadmin.php"><i class="header nav-small-cap"></i>MAKE AN ADMIN</a></li> <br>
+			<li><a href="<?php echo base_url('index.php/home/admin');?>"><i class="header nav-small-cap"></i>MAKE AN ADMIN</a></li> <br>
 		</div>
     </section>
   </aside>
