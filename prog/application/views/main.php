@@ -127,33 +127,31 @@
 
 
 
-	<!-- jQuery 3 -->
-	<script src="assets/vendor_components/jquery-3.3.1/jquery-3.3.1.js"></script>
+<!-- jQuery 3 -->
+<script src="<?php echo base_url();?>assets/vendor_components/jquery-3.3.1/jquery-3.3.1.js"></script>
 
-	<!-- jQuery UI 1.11.4 -->
-	<script src="assets/vendor_components/jquery-ui/jquery-ui.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="<?php echo base_url();?>assets/vendor_components/jquery-ui/jquery-ui.js"></script>
 
-	<!-- popper -->
-	<script src="assets/vendor_components/popper/dist/popper.min.js"></script>
+<!-- popper -->
+<script src="<?php echo base_url();?>assets/vendor_components/popper/dist/popper.min.js"></script>
 
-	<!-- Bootstrap 4.0-->
-	<script src="assets/vendor_components/bootstrap/dist/js/bootstrap.js"></script>
+<!-- Bootstrap 4.0-->
+<script src="<?php echo base_url();?>assets/vendor_components/bootstrap/dist/js/bootstrap.js"></script>
 
-	<!-- date-range-picker -->
-	<script src="assets/vendor_components/moment/min/moment.min.js"></script>
-	<script src="assets/vendor_components/bootstrap-daterangepicker/daterangepicker.js"></script>
-
-
+<!-- date-range-picker -->
+<script src="<?php echo base_url();?>assets/vendor_components/moment/min/moment.min.js"></script>
+<script src="<?php echo base_url();?>assets/vendor_components/bootstrap-daterangepicker/daterangepicker.js"></script>
 
 
-	<script src="js/template.js"></script>
 
 
-	<script src="js/pages/dashboard.js"></script>
-	<script src="js/pages/dashboard-chart.js"></script>
+<script src="<?php echo base_url();?>assets/js/template.js"></script>
 
 
-	<script src="js/demo.js"></script>
+<script src="<?php echo base_url();?>assets/js/pages/dashboard.js"></script>
+
+<script src="<?php echo base_url();?>assets/js/demo.js"></script>
 
 
 </body>
