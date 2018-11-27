@@ -16,7 +16,9 @@
 <body>
     <!-- Navigation -->
       <?php include"navbar.php" ?>
-    
+    <blockquote class="blockquote text-center m-3">
+    <h1>Registration</h1>
+</blockquote>
     
  
     <!-- Page Content -->
@@ -47,11 +49,15 @@
     <label for="exampleInputPassword1">Confirm Password</label>
     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
   </div>
+<!--
   <div class="form-check">
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
     <label class="form-check-label" for="exampleCheck1">Check me out</label>
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+-->
+ <div class="mx-auto" style="width: 200px;">
+  <button type="submit" class="btn btn-primary btn-lg m-3">Submit</button>
+</div>
 </form>
     </div>
     <!-- Optional JavaScript -->
