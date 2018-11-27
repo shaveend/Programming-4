@@ -47,7 +47,7 @@
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <a class="btn btn-outline-success my-2 my-sm-0" href="#" role="button">Login</a>
+      <a class="btn btn-outline-success my-2 my-sm-0" href="<?php echo base_url('index.php/Auth/login');?>" role="button">Login</a>
     </form>
   </div>
 </nav>

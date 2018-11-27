@@ -1,5 +1,6 @@
 <?php include('Elements/header.php')?>
 
+<?php include('main.php')?>
 
 
 	<!-- Welcome page corosal  -->
@@ -7,25 +8,25 @@
 	<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="moterbike_all.jpg" alt="First slide">
+      <img class="d-block w-100" src="<?php echo base_url('Images/moterbike_all.jpg');?>"" alt="Ajith Motors">
 			<div class="carousel-caption d-none d-md-block">
-		    <h5>Ajith Motors</h5>
-		    <p>Moterbike Solution</p>
+		    <h3>Ajith Motors</h3>
+		    <h5>Moterbike Solution</h5>
 		  </div>
 		</div>
 		<div class="carousel-item">
-		  <img class="d-block w-100" src="Images/moterbike_showcase.jpg" alt="...">
+		  <img class="d-block w-100" src="<?php echo base_url('Images/moterbike_showcase.jpg');?>" alt="Moterbike Showcase">
 		  <div class="carousel-caption d-none d-md-block">
-		    <h5>Ajith Showcase</h5>
-		    <p>Dream Wheels come true here</p>
+		    <h3>Ajith Showcase</h3>
+		    <h5>Dream Wheels come true here</h5>
 		  </div>
 		</div>
 
 		<div class="carousel-item">
-		  <img class="d-block w-100" src="Images/moterbike_service.jpg" alt="...">
+		  <img class="d-block w-100" src="<?php echo base_url('Images/moterbike_service.jpg');?>" alt="Moterbike Service">
 		  <div class="carousel-caption d-none d-md-block">
-		    <h5>Ajith Services</h5>
-		    <p>You ride it, We take care of it!</p>
+		    <h3>Ajith Services</h3>
+		    <h5>You ride it, We take care of it!</h5>
 		  </div>
 		</div>
 
@@ -41,6 +42,5 @@
 </div>
 
 <!-- Corosal ends here -->
-<img src="Images/moterbike_showcase.jpg" alt="...">
 
 <?php include('Elements/footer.php')?>
