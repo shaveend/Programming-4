@@ -5,6 +5,6 @@ class Auth extends CI_Controller {
 
 	public function registration()
 	{
-		$this->load->view('welcome');
+		$this->load->view('registration');
 	}
 }
