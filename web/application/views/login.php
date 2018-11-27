@@ -10,7 +10,9 @@
     <!-- Page Content -->
     <div class="container m-3 mx-auto" >
 
-<form>
+<?php echo form_open('Auth/userLogin');?>
+
+<?php echo validation_errors();?>
 
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
@@ -30,7 +32,7 @@
 
   <button type="submit" class="btn btn-primary btn-lg m-3 mx-auto">Login</button>
         <p class="message">Not registered? <a href="#">Create an account</a></p>
-</form>
+<?php echo form_close();?>
     </div>
 
 <?php include"Elements/footer.php" ?>
