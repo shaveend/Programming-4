@@ -30,7 +30,7 @@
   </div>
 -->
 
-  <button type="submit" class="btn btn-primary btn-lg m-3 mx-auto">Login</button>
+  <button type="submit" class="btn btn-primary btn-lg  m-3 mx-auto">Login</button>
         <p class="message">Not registered? <a href="#">Create an account</a></p>
 <?php echo form_close();?>
     </div>

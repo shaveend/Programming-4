@@ -12,12 +12,12 @@
 
   <div class="form-row">
     <div class="col">
-    <label for="firstnameinput">First name</label>
-      <input type="text" class="form-control" placeholder="First name" name = "fname">
+    <label for="firstnameinput">Name</label>
+      <input type="text" class="form-control" placeholder="Name" name = "name">
     </div>
     <div class="col">
-         <label for="lastname input">Last name</label>
-      <input type="text" class="form-control" placeholder="Last name" name = "lname">
+         <label for="lastname input">Phone Number</label>
+      <input type="text" class="form-control" placeholder="Phone Number" name = "tp">
     </div>
   </div>
   <div class="form-group">
@@ -40,7 +40,7 @@
   </div>
 -->
  <div class="mx-auto" style="width: 200px;">
-  <button type="submit" class="btn btn-primary btn-lg m-3">Submit</button>
+  <button type="submit" class="btn btn-primary btn-lg btn-block m-3">Submit</button>
 </div>
 <?php echo form_close();?>
     </div>
