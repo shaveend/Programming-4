@@ -31,6 +31,10 @@
       <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url('index.php/Showcase');?>">Showroom</a>
       </li>
+        <li class="nav-item">
+        <a class="nav-link" href="<?php echo base_url('index.php/Service');?>">Service Center</a>
+      </li>
+<!--
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="<?php echo base_url('index.php/Service');?>" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Service Center
@@ -45,6 +49,7 @@
       <li class="nav-item">
         <a class="nav-link disabled" href="#">Disabled</a>
       </li>
+-->
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <a class="btn btn-outline-success my-2 my-sm-0" href="<?php echo base_url('index.php/Auth/login');?>" role="button">Login</a>
