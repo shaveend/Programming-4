@@ -14,6 +14,18 @@ class MUser extends CI_Model{
   }
 
   public function userLogin(){
-    return FALSE;
+    $email = $this->input->post('email');
+    $password = sha1($this->input->post('password'));
+
+    $this->db->where('email',$email);
+    $this->db->where('password',$password);
+    $response = $this->db->get('customer');
+
+    if ($response->num_rows()==1){
+      return $response->row(0);
+    }else{
+      return FALSE;
+    }
+
   }
 }
