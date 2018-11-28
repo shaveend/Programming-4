@@ -8,30 +8,31 @@
     <!-- Page Content -->
     <div class="container m-3 mx-auto" >
 
-<?php echo form_open('Auth/userRegister');?>
+<?php echo form_open('Info/submitContact');?>
+<?php echo validation_errors();?>
 
   <div class="form-row">
     <div class="col">
     <label for="firstnameinput">Name</label>
-      <input type="text" class="form-control" placeholder="Name" name = "name">
+      <input type="text" class="form-control" placeholder="Name" name = "name" value = "<?php if (isset($_SESSION['cid'])){echo $_SESSION['name'];}?>">
     </div>
     <div class="col">
          <label for="lastname input">Phone Number</label>
-      <input type="text" class="form-control" placeholder="Phone Number" name = "tp">
+      <input type="text" class="form-control" placeholder="Phone Number" name = "tp" value = "<?php if (isset($_SESSION['cid'])){echo $_SESSION['phonenumber'];}?>">
     </div>
   </div>
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name = "email" ondragover="email">
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name = "email" ondragover="email" value = "<?php if (isset($_SESSION['cid'])){echo $_SESSION['email'];}?>">
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">Title</label>
-    <input type="text" class="form-control" id="title" placeholder="Enter a title for your inquiry" name = "Title">
+    <input type="text" class="form-control" id="title" placeholder="Enter a title for your inquiry" name = "title">
   </div>
      <div class="form-group">
     <label for="Descrition">Descrition</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" name = "discription"></textarea>
   </div>
 <!--
   <div class="form-check">

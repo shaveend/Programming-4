@@ -9,7 +9,7 @@
 }
 
 #myFooter .info{
-    text-align: justify; 
+    text-align: justify;
     color: #afb0b1;
 }
 
@@ -61,7 +61,7 @@
     text-align: center;
     background-color: #33373e;
     text-align: center;
-        
+
     }
 #myFooter .second-bar a {
     font-size: 22px;
@@ -151,29 +151,24 @@ body{
                 <div class="col-sm-3">
                     <h5>Get started</h5>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Sign up</a></li>
+                        <li><a href="<?php echo base_url('')?>">Home</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Cantact</h5>
+                    <ul>
+                        <li><a href="<?php echo base_url('index.php/Info/contact')?>">Contact us</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3">
                     <h5>About us</h5>
                     <ul>
-                        <li><a href="#">Company Information</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">Reviews</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <h5>Support</h5>
-                    <ul>
-                        <li><a href="#">Sevice Station</a></li>
-                        <li><a href="#">Inquiry</a></li>
-                        <li><a href="#">Forums</a></li>
+                        <li><a href="<?php echo base_url('index.php/Info/about')?>">About us</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3 info">
                     <h5>Information</h5>
-                    <p> Lorem ipsum dolor amet, consectetur adipiscing elit. Etiam consectetur aliquet aliquet. Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
+                    <p> Ajith Motors, Motorbike Service Center and Showcase, Make your dream Vehicle come true with us. And Also make sure to take good care about your wheel horse, And that's what Ajith Service center is for.</p>
                 </div>
             </div>
         </div>
@@ -188,7 +183,7 @@ body{
             </div>
         </div>
     </footer>
-  
+
 </body>
 
 </html>
