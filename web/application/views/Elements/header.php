@@ -34,22 +34,7 @@
         <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url('index.php/Service');?>">Service Center</a>
       </li>
-<!--
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="<?php echo base_url('index.php/Service');?>" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Service Center
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="<?php echo base_url('index.php/Service');?>">Action</a>
-          <a class="dropdown-item" href="<?php echo base_url('index.php/Service');?>">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="<?php echo base_url('index.php/Service');?>">Something else here</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
--->
+
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <?php
@@ -59,7 +44,6 @@
           echo '<a class="btn btn-outline-success my-2 my-sm-0" href="'.base_url('index.php/Auth/logout').'" role="button">Log Out</a>';
         }
       ?>
-      <!-- <a class="btn btn-outline-success my-2 my-sm-0" href="<?php echo base_url('index.php/Auth/login');?>" role="button">Login</a> -->
     </form>
   </div>
 </nav>
