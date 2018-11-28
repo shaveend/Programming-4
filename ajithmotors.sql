@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.7.0
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Nov 28, 2018 at 05:49 PM
--- Server version: 10.1.35-MariaDB
--- PHP Version: 7.2.9
+-- Host: 127.0.0.1
+-- Generation Time: Nov 28, 2018 at 09:21 PM
+-- Server version: 10.1.22-MariaDB
+-- PHP Version: 7.1.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -81,7 +81,8 @@ CREATE TABLE `customer` (
 --
 
 INSERT INTO `customer` (`cid`, `name`, `phonenumber`, `email`, `username`, `password`) VALUES
-(1, 'Thiranja', '0719911113', 'lakrandikathiranja@gmail.com', NULL, '8cb2237d0679ca88db6464eac60da96345513964');
+(1, 'Thiranja', '0719911113', 'lakrandikathiranja@gmail.com', NULL, '8cb2237d0679ca88db6464eac60da96345513964'),
+(2, 'Shaveen de Silva', '0779855170', 'shaveen.desilva@yahoo.com', NULL, '7110eda4d09e062aa5e4a390b0a572ac0d2c0220');
 
 -- --------------------------------------------------------
 
@@ -92,9 +93,15 @@ INSERT INTO `customer` (`cid`, `name`, `phonenumber`, `email`, `username`, `pass
 CREATE TABLE `service` (
   `cust_id` int(11) DEFAULT NULL,
   `service_id` varchar(10) DEFAULT NULL,
-  `invoice_no` varchar(10) NOT NULL,
   `date` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `service`
+--
+
+INSERT INTO `service` (`cust_id`, `service_id`, `date`) VALUES
+(2, '001', '2018-11-30');
 
 -- --------------------------------------------------------
 
@@ -108,6 +115,13 @@ CREATE TABLE `services` (
   `price` int(11) DEFAULT NULL,
   `time` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `services`
+--
+
+INSERT INTO `services` (`id`, `type`, `price`, `time`) VALUES
+('001', 'Full Service', 1500, '2.5');
 
 --
 -- Indexes for dumped tables
@@ -135,7 +149,6 @@ ALTER TABLE `customer`
 -- Indexes for table `service`
 --
 ALTER TABLE `service`
-  ADD PRIMARY KEY (`invoice_no`),
   ADD KEY `cust_id_idx` (`cust_id`),
   ADD KEY `service_id_idx` (`service_id`);
 
@@ -154,13 +167,11 @@ ALTER TABLE `services`
 --
 ALTER TABLE `contact`
   MODIFY `conid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
 --
 -- AUTO_INCREMENT for table `customer`
 --
 ALTER TABLE `customer`
-  MODIFY `cid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
+  MODIFY `cid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- Constraints for dumped tables
 --
