@@ -5,6 +5,8 @@ class Showcase extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('showroomMain');
+		$this->load->model('MShowcase');
+		$results['results'] = $this->MShowcase->getBikes();
+		$this->load->view('showroomMain',$results);
 	}
 }
