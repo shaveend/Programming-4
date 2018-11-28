@@ -128,6 +128,9 @@
 
 <br>
 <br>
+<div class="container">
+
+
         <form class="" action="index.html" method="post">
             <div class="form-row">
             <div class="form-group col-md-6">
@@ -145,7 +148,7 @@
           </div>
           <div class="form-group">
             <label for="inputPrice">Price</label>
-            <input type="text" class="form-control" name="price" id="inputPrice" >
+            <input type="text" class="form-control" name="price" id="inputPrice" placeholder="LKR" >
           </div>
           <div class="form-row">
             <div class="form-group col-md-4">
@@ -170,6 +173,7 @@
 
           <button type="submit" class="btn btn-primary">Upload</button>
         </form>
+        </div>
         </div>
 <!-- ./wrapper -->
 
