@@ -176,9 +176,9 @@ body{
            <div class="container" id="second">
                 <h2 class="logo"><a href="#"> Ajith Motors </a></h2>
                 <div class="social-icons">
-                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                    <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+                    <a href="https://twitter.com/" class="twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="https://plus.google.com/discover" class="google"><i class="fa fa-google-plus"></i></a>
                 </div>
             </div>
         </div>
