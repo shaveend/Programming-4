@@ -10,6 +10,9 @@
     <!-- Page Content -->
     <div class="container m-3 mx-auto" >
 
+<?php echo form_open('ServiceReq/confirmBookService');?>
+<?php//echo validation_errors();?>
+
 <div class="form-row">
     <div class="col">
     <label for="nameinput">Name</label>
@@ -42,7 +45,7 @@
 -->
 
   <button type="submit" class="btn btn-primary btn-lg  m-3 mx-auto">Confirm</button>
-
+  <?php echo form_close();?>
     </div>
 
 <?php include"Elements/footer.php" ?>
