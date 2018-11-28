@@ -129,13 +129,13 @@
 <br>
 <br>
 <div class="container">
-
-
-        <form class="" action="index.html" method="post">
+<?php echo validation_errors();?>
+<?php echo form_open('shw/upload');?>
+        <!--<form action="index.html" method="post">-->
             <div class="form-row">
             <div class="form-group col-md-6">
               <label for="inputname">Name</label>
-              <input type="email" class="form-control" name="nme" id="inputname" placeholder="Name">
+              <input type="text" class="form-control" name="nme" id="inputname" placeholder="Name">
             </div>
             <div class="form-group col-md-6">
               <label for="inputtype">Type</label>
