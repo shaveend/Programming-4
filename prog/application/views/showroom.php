@@ -121,10 +121,53 @@
 			<div class="d-flex align-items-center">
 				<div class="mr-auto">
 					<h3 class="page-title">Dashboard</h3>
-				</div>
+</div>
         <div id="clock" class="date">  </div>
+      </div>
+      </div>
 
+<br>
+<br>
+        <form class="" action="index.html" method="post">
+            <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">Name</label>
+              <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">Type</label>
+              <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputAddress">Brand</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+          </div>
+          <div class="form-group">
+            <label for="inputAddress2">Price</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputCity">Country</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputState">Tyre-Size</label>
+              <select id="inputState" class="form-control">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="inputZip">Image</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+          </div>
 
+          <button type="submit" class="btn btn-primary">Upload</button>
+        </form>
+        </div>
 <!-- ./wrapper -->
 
 
