@@ -18,13 +18,13 @@ USE `ajithmotors` ;
 -- Table `ajithmotors`.`customer`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `ajithmotors`.`customer` (
-  `nic` VARCHAR(10) NOT NULL,
+  `cid` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NULL,
   `phonenumber` VARCHAR(15) NULL,
   `email` VARCHAR(45) NULL,
   `username` VARCHAR(45) NULL,
   `password` VARCHAR(45) NULL,
-  PRIMARY KEY (`nic`))
+  PRIMARY KEY (`cid`))
 ENGINE = InnoDB;
 
 
@@ -44,15 +44,16 @@ ENGINE = InnoDB;
 -- Table `ajithmotors`.`service`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `ajithmotors`.`service` (
-  `cust_id` VARCHAR(10) NULL,
+  `cust_id` INT NULL,
   `service_id` VARCHAR(10) NULL,
   `invoice_no` VARCHAR(10) NOT NULL,
+  `date` DATE NULL,
   PRIMARY KEY (`invoice_no`),
   INDEX `cust_id_idx` (`cust_id` ASC),
   INDEX `service_id_idx` (`service_id` ASC),
   CONSTRAINT `cust_id`
     FOREIGN KEY (`cust_id`)
-    REFERENCES `ajithmotors`.`customer` (`nic`)
+    REFERENCES `ajithmotors`.`customer` (`cid`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `service_id`
