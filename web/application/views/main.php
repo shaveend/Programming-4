@@ -9,25 +9,25 @@
 <!--   Card items-->
 <div class="card-deck m-2">
 <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="Images/moterbike_service.jpg" alt="Card image cap">
+  <img class="card-img-top" src="<?php echo base_url('Images/moterbike_service.jpg');?>" alt="Card image cap">
   <div class="card-body">
     <p class="card-text">We've got best technicians to help you with any of your bike problems</p>
   </div>
 </div>
 <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="Images/bikeshow1.jpg" alt="Card image cap">
+  <img class="card-img-top" src="<?php echo base_url('Images/bikeshow1.jpg');?>" alt="Card image cap">
   <div class="card-body">
     <p class="card-text">Showroom with new bikes at reasonable prices</p>
   </div>
 </div>
 <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="Images/bikesoil.jpg" alt="Card image cap">
+  <img class="card-img-top" src="<?php echo base_url('Images/bikesoil.jpg');?>" alt="Card image cap">
   <div class="card-body">
     <p class="card-text">Wide range of services are offered</p>
   </div>
 </div>
 <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="Images/bikerep2.jpg" alt="Card image cap">
+  <img class="card-img-top" src="<?php echo base_url('Images/bikerep2.jpg');?>" alt="Card image cap">
   <div class="card-body">
     <p class="card-text">Best in repairing old bikes</p>
   </div>
