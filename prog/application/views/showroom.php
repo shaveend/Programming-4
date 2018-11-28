@@ -131,37 +131,40 @@
         <form class="" action="index.html" method="post">
             <div class="form-row">
             <div class="form-group col-md-6">
-              <label for="inputEmail4">Name</label>
-              <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+              <label for="inputname">Name</label>
+              <input type="email" class="form-control" name="nme" id="inputname" placeholder="Name">
             </div>
             <div class="form-group col-md-6">
-              <label for="inputPassword4">Type</label>
-              <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+              <label for="inputtype">Type</label>
+              <input type="text" class="form-control" name="typ" id="inputtype" placeholder="Type">
             </div>
           </div>
           <div class="form-group">
-            <label for="inputAddress">Brand</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            <label for="inputBrand">Brand</label>
+            <input type="text" class="form-control" name="brnd" id="inputBrand" >
           </div>
           <div class="form-group">
-            <label for="inputAddress2">Price</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            <label for="inputPrice">Price</label>
+            <input type="text" class="form-control" name="price" id="inputPrice" >
           </div>
           <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="inputCity">Country</label>
-              <input type="text" class="form-control" id="inputCity">
-            </div>
             <div class="form-group col-md-4">
-              <label for="inputState">Tyre-Size</label>
-              <select id="inputState" class="form-control">
-                <option selected>Choose...</option>
-                <option>...</option>
-              </select>
+              <label for="inputContry">Country</label>
+            <select id="inputCountry" name="country" class="form-control">
+              <option selected>India</option>
+              <option>Japan</option>
+              <option>Thaiwan</option>
+                </select>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputTyre">Tyre-Size</label>
+            <input type="text" class="form-control" name="tyre" id="inputTyre" >
+
+
             </div>
             <div class="form-group col-md-2">
-              <label for="inputZip">Image</label>
-              <input type="text" class="form-control" id="inputZip">
+              <label for="addimage">Add image</label>
+              <input type="file" class="form-control-file" name="img" id="addimage">
             </div>
           </div>
 
