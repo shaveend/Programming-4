@@ -1,0 +1,84 @@
+-- MySQL Workbench Forward Engineering
+
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
+
+-- -----------------------------------------------------
+-- Schema ajithmotors
+-- -----------------------------------------------------
+
+-- -----------------------------------------------------
+-- Schema ajithmotors
+-- -----------------------------------------------------
+CREATE SCHEMA IF NOT EXISTS `ajithmotors` DEFAULT CHARACTER SET utf8 ;
+USE `ajithmotors` ;
+
+-- -----------------------------------------------------
+-- Table `ajithmotors`.`customer`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `ajithmotors`.`customer` (
+  `nic` VARCHAR(10) NOT NULL,
+  `name` VARCHAR(45) NULL,
+  `phonenumber` VARCHAR(15) NULL,
+  `email` VARCHAR(45) NULL,
+  `username` VARCHAR(45) NULL,
+  `password` VARCHAR(45) NULL,
+  PRIMARY KEY (`nic`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `ajithmotors`.`services`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `ajithmotors`.`services` (
+  `id` VARCHAR(10) NOT NULL,
+  `type` VARCHAR(45) NULL,
+  `price` INT NULL,
+  `time` VARCHAR(10) NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `ajithmotors`.`service`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `ajithmotors`.`service` (
+  `cust_id` VARCHAR(10) NULL,
+  `service_id` VARCHAR(10) NULL,
+  `invoice_no` VARCHAR(10) NOT NULL,
+  PRIMARY KEY (`invoice_no`),
+  INDEX `cust_id_idx` (`cust_id` ASC),
+  INDEX `service_id_idx` (`service_id` ASC),
+  CONSTRAINT `cust_id`
+    FOREIGN KEY (`cust_id`)
+    REFERENCES `ajithmotors`.`customer` (`nic`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `service_id`
+    FOREIGN KEY (`service_id`)
+    REFERENCES `ajithmotors`.`services` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `ajithmotors`.`bikes`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `ajithmotors`.`bikes` (
+  `idbikes` VARCHAR(10) NOT NULL,
+  `name` VARCHAR(45) NULL,
+  `type` VARCHAR(45) NULL,
+  `brand` VARCHAR(45) NULL,
+  `price` VARCHAR(45) NULL,
+  `country` VARCHAR(45) NULL,
+  `rear_tire` VARCHAR(45) NULL,
+  `photo` VARCHAR(100) NULL,
+  PRIMARY KEY (`idbikes`))
+ENGINE = InnoDB;
+
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
