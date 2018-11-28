@@ -57,3 +57,10 @@
   </div>
 </nav>
 <!-- Navbar code ends here -->
+
+<!-- reading flash data massagers -->
+<?php
+if ($this->session->flashdata('msg')){
+  echo '<h4>'.$this->session->flashdata('msg').'</h4>';
+}
+?>
