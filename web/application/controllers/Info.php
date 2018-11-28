@@ -9,7 +9,7 @@ class Info extends CI_Controller {
 	}
 
 	public function about(){
-		  $this->load->view('showroomMain');
+		  $this->load->view('about');
 		}
 
   public function submitContact(){
