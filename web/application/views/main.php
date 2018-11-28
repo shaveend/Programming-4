@@ -1,4 +1,4 @@
-<div class="jumbotron" style="background-image: url(images/bmountain2.jpg); background-size: 100% 100%;">
+<div class="jumbotron" style="background-image: url(<?php echo base_url('Images/bmountain2.jpg');?>); background-size: 100% 100%;">
   <h1 class="display-4">Ajith Motors!</h1>
   <p class="lead">We have best technicians to find solutions to any problem that you encounter in your bike.we also have a showroom with latest bikes at reasonable prices</p>
   <hr class="my-4">
