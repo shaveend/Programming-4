@@ -147,11 +147,13 @@
       </div>
       </div>
       </div>
-      <div class="table-responsive">
+
 
 
         <table id="tbl">
           <thead>
+
+
             <th>Time</th>
             <th >First Name</th>
             <th>Last Name</th>
@@ -159,9 +161,18 @@
             <th>Bike Type</th>
             <th>Sercive Type</th>
           </thead>
-        </table>
-      </div>
 
+            <?php foreach ($data as $val) { ?>
+            <tr>
+              <td><?php echo $val->cust_id; ?></td>
+              <td><?php echo $val->service_id; ?></td>
+              <td><?php echo $val->type; ?></td>
+              <td><?php echo $val->price; ?></td>
+              <td><?php echo $val->time; ?></td>
+              <td><?php echo $val->name; ?></td>
+          </tr>
+        <?php } ?>
+        </table>
         </div>
 
 
