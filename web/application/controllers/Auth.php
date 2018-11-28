@@ -33,7 +33,7 @@ class Auth extends CI_Controller {
 				);
 
 				$this->session->set_userdata($sessionData);
-				$this->session->set_flashdata('msg','Welcome Back!!!');
+				$this->session->set_flashdata('msg','Welcome Back! '.$this->session->name);
 				redirect('Welcome/index');
 			}
 		}
@@ -61,5 +61,16 @@ class Auth extends CI_Controller {
 					redirect('Auth/registration');
 				}
 	    }
+	}
+
+	public function logout(){
+		unset(
+        $_SESSION['cid'],
+        $_SESSION['name'],
+				$_SESSION['phonenumber'],
+        $_SESSION['email']
+			);
+			$this->session->set_flashdata('msg','See You next Time');
+			redirect('Welcome/index');
 	}
 }
