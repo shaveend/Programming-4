@@ -52,8 +52,22 @@
 -->
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <a class="btn btn-outline-success my-2 my-sm-0" href="<?php echo base_url('index.php/Auth/login');?>" role="button">Login</a>
+      <?php
+        if (isset($_SESSION['cid']) == FALSE){
+          echo '<a class="btn btn-outline-success my-2 my-sm-0" href="'.base_url('index.php/Auth/login').'" role="button">Log In</a>';
+        }else{
+          echo '<a class="btn btn-outline-success my-2 my-sm-0" href="'.base_url('index.php/Auth/logout').'" role="button">Log Out</a>';
+        }
+      ?>
+      <!-- <a class="btn btn-outline-success my-2 my-sm-0" href="<?php echo base_url('index.php/Auth/login');?>" role="button">Login</a> -->
     </form>
   </div>
 </nav>
 <!-- Navbar code ends here -->
+
+<!-- reading flash data massagers -->
+<?php
+if ($this->session->flashdata('msg')){
+  echo '<h4>'.$this->session->flashdata('msg').'</h4>';
+}
+?>
