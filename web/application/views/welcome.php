@@ -1,11 +1,16 @@
 <?php include('Elements/header.php')?>
 
 <?php include('main.php')?>
+<style>
+    .carousel-inner{
+        
+    }
 
+</style>
 
 	<!-- Welcome page corosal  -->
 
-	<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+	<div id="carouselExampleControls" class="carousel slide m-2" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img class="d-block w-100" src="<?php echo base_url('Images/moterbike_all.jpg');?>"" alt="Ajith Motors">
