@@ -18,7 +18,7 @@
       <div class="card-body">
     An Ultimate Advantage Bike Service includes a complete strip down and re-build of the bike by one of our expert technicians,<br> as  well as a thorough clean and de-grease.
     <div class="container" >
-     <a class="btn btn-primary" href="#" role="button" style="float: right";>Book One Now</a>
+     <a class="btn btn-primary" href="<?php echo base_url('index.php/Service/loadBookService'); ?>" role="button" style="float: right";>Book One Now</a>
      <br>
      </div>
       </div>

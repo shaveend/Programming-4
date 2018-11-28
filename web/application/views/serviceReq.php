@@ -13,16 +13,16 @@
 <div class="form-row">
     <div class="col">
     <label for="nameinput">Name</label>
-      <input type="text" class="form-control" placeholder="Name" name = "name">
+      <input type="text" class="form-control" placeholder="Name" name = "name" value = "<?php echo $this->session->name;?>">
     </div>
     <div class="col">
          <label for="phoneNumber">Phone Number</label>
-      <input type="text" class="form-control" placeholder="Phone Number" name = "tp">
+      <input type="text" class="form-control" placeholder="Phone Number" name = "tp" value = "<?php echo $this->session->phonenumber;?>">
     </div>
   </div>
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name = "email" >
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name = "email" value = "<?php echo $this->session->email;?>">
   </div>
    <div class="form-group">
     <label for="exampleInputEmail1">Service type</label>
