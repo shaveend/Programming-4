@@ -9,6 +9,7 @@
     <div class="container m-3 mx-auto" >
 
 <?php echo form_open('Auth/userRegister');?>
+<?php echo validation_errors();?>
 
   <div class="form-row">
     <div class="col">
