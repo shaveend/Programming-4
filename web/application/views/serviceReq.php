@@ -11,7 +11,7 @@
     <div class="container m-3 mx-auto" >
 
 <?php echo form_open('ServiceReq/confirmBookService');?>
-<?php//echo validation_errors();?>
+<?php echo validation_errors();?>
 
 <div class="form-row">
     <div class="col">
