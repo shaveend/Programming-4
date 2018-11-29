@@ -17,7 +17,7 @@
    echo '<img style="width: 200px; height: 150px;" class="card-img-top" src='.$bike->photo.'>';
    echo '<div class="card-body">';
    echo '<h5 class="card-title">This is a '.$bike->name.'</h5>';
-   echo '<p class="card-text">Type of '.$bike->type.' brand is '.$bike->brand.' and its made in '.$bike->country.' and aslo '.$bike->rear_tire.'</p>';
+   echo '<p class="card-text">Type of '.$bike->type.' brand is '.$bike->brand.' and its made in '.$bike->country.' and tyres are '.$bike->rear_tire.'</p>';
    // echo '<p class="card-text">'.$bike->brand.'</p>';
    // echo '<p class="card-text">'.$bike->price.'</p>';
    // echo '<p class="card-text">'.$bike->country.'</p>';

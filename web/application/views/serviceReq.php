@@ -29,7 +29,11 @@
   </div>
    <div class="form-group">
     <label for="exampleInputEmail1">Service type</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="" name = "servicetype" >
+    <select class="form-control" id="servicetype">
+      <option>Full service</option>
+      <option>Oil changing</option>
+      <option>Fine Tuning</option>
+    </select>
   </div>
     <div class="form-group">
     <label for="Date">Date required</label>
