@@ -154,12 +154,13 @@
           <thead>
 
 
-            <th>Time</th>
-            <th >First Name</th>
-            <th>Last Name</th>
-            <th>Phone Number</th>
-            <th>Bike Type</th>
-            <th>Sercive Type</th>
+            <th>customerid</th>
+            <th >serviceid</th>
+            <th>type</th>
+            <th>price</th>
+            <th>time</th>
+            <th>name</th>
+            <th>phonenumber</th>
           </thead>
 
             <?php foreach ($data as $val) { ?>
@@ -170,6 +171,7 @@
               <td><?php echo $val->price; ?></td>
               <td><?php echo $val->time; ?></td>
               <td><?php echo $val->name; ?></td>
+              <td><?php echo $val->phonenumber; ?></td>
           </tr>
         <?php } ?>
         </table>

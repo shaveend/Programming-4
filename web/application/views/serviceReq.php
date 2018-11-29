@@ -27,13 +27,9 @@
     <label for="exampleInputEmail1">Email address</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name = "email" value = "<?php echo $this->session->email;?>">
   </div>
-   <div class="form-group">
+  <div class="form-group">
     <label for="exampleInputEmail1">Service type</label>
-    <select class="form-control" id="servicetype">
-      <option>Full service</option>
-      <option>Oil changing</option>
-      <option>Fine Tuning</option>
-    </select>
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="" name = "servicetype" >
   </div>
     <div class="form-group">
     <label for="Date">Date required</label>

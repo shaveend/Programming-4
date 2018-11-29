@@ -122,6 +122,11 @@
 					<h3 class="page-title">Dashboard</h3>
 					</div>
           <div id="clock" class="date">  </div>
+          </div>
+      </div>
+      </div>
+      <img src="https://bubhandari.net/wp-content/uploads/2017/09/honda-service-centre-06.jpg"  alt="Main Image" >
+
 
 <!-- ./wrapper -->
 

@@ -7,7 +7,7 @@ class ServiceReq extends CI_Controller {
 
 	public function confirmBookService(){
 		
-		$this->form_validation->set_rules('servicetype', 'Service Type', 'required');
+		//$this->form_validation->set_rules('servicetype', 'Service Type', 'required');
 		$this->form_validation->set_rules('date', 'Date', 'required');
 		
 		if ($this->form_validation->run() == FALSE)
